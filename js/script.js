@@ -11,12 +11,40 @@ project 1 - A Random Quote Generator
  * `quotes` array 
 ***/
 
-
+const quotes = [
+  {
+    quote: 'Only those who have learned the power of sincere and selfless contribution experience life’s deepest joy: true fulfillment.',
+    author: 'Tony Robbins'
+  },
+  {
+    quote:'This is my simple religion. There is no need for temples; no need for complicated philosophy. Our own brain, our own heart is our temple; the philosophy is kindness.',
+    author: 'Dalai Lama',
+    citation: '"The Dalai Lama: A Policy of Kindness" - book',
+    year: 1990
+  },
+  {
+    quote: 'Believe you can and you\'re halfway there.',
+    author: 'Theodore Roosevelt'
+  },
+  {
+    quote: 'Change is the law of life. And those who look only to the past or present are certain to miss the future.',
+    author: 'John F. Kennedy',
+    citation: 'Speach at City Hall in New Orleans, Louisiana',
+    year: 1963
+  },
+  {
+    quote: 'We can do anything we want to if we stick to it long enough.',
+    author: 'Helen Keller'
+  },
+  {
+    quote: 'The future belongs to those who believe in the beauty of their dreams.',
+    author: 'Eleanor Roosevelt'
+  }
+];
 
 /***
  * `getRandomQuote` function
 ***/
-
 
 
 /***
