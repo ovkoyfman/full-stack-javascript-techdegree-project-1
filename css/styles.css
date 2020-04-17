@@ -114,6 +114,9 @@ h1 {
   content: ", ";
   font-style: normal;
 }
+.tags-container {
+  min-height: 30px;
+}
 .tag {
   color: #fff;
   text-shadow: 1px 1px 1px rgba(50, 50, 50, 0.3);

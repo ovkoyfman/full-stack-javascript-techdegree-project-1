@@ -10,31 +10,31 @@ project 1 - A Random Quote Generator
  ***/
 const quotes = [{
   quote: 'Only those who have learned the power of sincere and selfless contribution experience life’s deepest joy: true fulfillment.',
-  author: 'Tony Robbins',
+  source: 'Tony Robbins',
   tags: ['inspirational', 'life', 'power', 'experiance']
 }, {
   quote: 'This is my simple religion. There is no need for temples; no need for complicated philosophy. Our own brain, our own heart is our temple; the philosophy is kindness.',
-  author: 'Dalai Lama',
+  source: 'Dalai Lama',
   citation: '"The Dalai Lama: A Policy of Kindness" - book',
   year: 1990,
   tags: ['kindness', 'heart', 'simple', 'religion']
 }, {
   quote: 'Believe you can and you\'re halfway there.',
-  author: 'Theodore Roosevelt',
+  source: 'Theodore Roosevelt',
   tags: ['inspirational', 'you', 'believe', 'halfway']
 }, {
   quote: 'Change is the law of life. And those who look only to the past or present are certain to miss the future.',
-  author: 'John F. Kennedy',
+  source: 'John F. Kennedy',
   citation: 'Speach at City Hall in New Orleans, Louisiana',
   year: 1963,
   tags: ['change', 'life', 'future', 'past']
 }, {
   quote: 'We can do anything we want to if we stick to it long enough.',
-  author: 'Helen Keller',
+  source: 'Helen Keller',
   tags: ['long', 'enough', 'want', 'stick']
 }, {
   quote: 'The future belongs to those who believe in the beauty of their dreams.',
-  author: 'Eleanor Roosevelt',
+  source: 'Eleanor Roosevelt',
   tags: ['beauty', 'dreams', 'future', 'believe', 'who']
 }];
 
@@ -62,7 +62,7 @@ function printQuote() {
   let tagContainer;
 
   function printQuoteMainSection() {
-    let sourceString = quoteData.author;
+    let sourceString = quoteData.source;
     //building citation string
     if (quoteData.citation) {
       sourceString += `<span class="citation">${quoteData.citation}</span>`;
