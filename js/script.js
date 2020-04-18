@@ -113,13 +113,16 @@ function printQuote() {
   printQuoteMainSection();
   appendTags();
   changeBodyColor();
+
+  //to referesh timer
+  clearInterval(refreshQuoteTimer);
+  refreshQuoteTimer = setInterval(printQuote, 15000);
 }
+//setting interval function to refresh quotes every 15 seconds
+let refreshQuoteTimer = setInterval(printQuote, 15000);
 
 //calling printQuote function to replace default quote on the page load 
 printQuote();
-
-//setting interval function to refresh quotes every 15 seconds
-setInterval(printQuote, 15000);
 
 //click event listener for the print quote button
 document.getElementById('load-quote').addEventListener("click", printQuote, false);
